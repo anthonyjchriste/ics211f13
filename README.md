@@ -14,7 +14,7 @@ Section 3: Martha Crosby
 
 ### Teaching Assistant
 Anthony Christe  
-achriste "at" hawaii.edu
+achriste@hawaii.edu
 
 ### Office Hours
 Wednesdays from 1:30 PM to 2:30 PM (and by appointment)    
