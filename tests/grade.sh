@@ -26,9 +26,6 @@ cp $TEST_SRC $SRC_DIR/.
 # Compile (compiling the test class should compile everything)
 javac -cp $SRC_DIR:$JUNIT_HOME $SRC_DIR/$TEST_SRC 
 
-# Extra compile options
-javac -cp $SRC_DIR $SRC_DIR/CreateSegments.java
-
 # Run JUnit (output to stdout and a report is generated in the src directory)
 java -cp $SRC_DIR:$JUNIT_HOME:$HAMCREST_HOME $JUNIT_RUNNER $TEST_CLASS | 2>&1 tee $SRC_DIR/report.txt
 
