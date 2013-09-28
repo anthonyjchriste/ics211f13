@@ -15,7 +15,24 @@ public class DutchFlag {
   }
 
   private static void makeDutchFlag(int[] colors) {
+    int bottom = 0;
+    int top = colors.length - 1;
+    int middle = 0;
 
+    while(middle <= top) {
+      if(colors[middle] == RED) {
+        swap(colors, middle, bottom);
+        bottom++;
+        middle++;
+      }
+      else if(colors[middle] == BLUE) {
+        swap(colors, middle, top);
+        top--;
+      }
+      else {
+        middle++;
+      }
+    }
   }
 
 
