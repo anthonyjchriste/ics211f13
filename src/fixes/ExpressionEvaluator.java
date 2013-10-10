@@ -4,6 +4,20 @@ import java.util.Stack;
 
 public class ExpressionEvaluator {
   /**
+   * Evaluates a prefix expression.
+   * @param prefixExpression An array of Strings, where is string represents either an operator or an operand.
+   * @return The evaluation of this prefix expression.
+   */
+  public static int evaluatePrefix(String[] prefixExpression) {
+    Stack<Integer> operandStack = new Stack<Integer>();
+    Stack<Integer> operatorStack = new Stack<Integer>();
+
+    // TODO: Implement me!
+
+    return 0;
+  }
+
+  /**
    * Evaluates a postfix expression.
    * @param postfixExpression An array of Strings, where is string represents either an operator or an operand.
    * @return The evaluation of this postfix expression.
@@ -48,8 +62,12 @@ public class ExpressionEvaluator {
   }
 
   public static void main(String[] args) {
+    String[] prefixExpression = {"/", "-", "*", "+", "1", "3", "2", "2", "2"};
     String[] postfixExpression = {"2", "2", "*", "8", "4", "/", "+"};
+
+    System.out.println(ExpressionEvaluator.evaluatePrefix(prefixExpression));
     System.out.println(ExpressionEvaluator.evaluatePostfix(postfixExpression));
+
   }
 
 }
