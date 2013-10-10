@@ -10,7 +10,7 @@ public class ExpressionEvaluator {
    */
   public static int evaluatePrefix(String[] prefixExpression) {
     Stack<Integer> operandStack = new Stack<Integer>();
-    Stack<Integer> operatorStack = new Stack<Integer>();
+    Stack<String> operatorStack = new Stack<String>();
 
     // TODO: Implement me!
 
