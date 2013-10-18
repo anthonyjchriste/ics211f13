@@ -33,6 +33,36 @@ public class StringReverse {
 		return "";
 	}
 	
+	/** ATTEMPT THIS SECTION ONLY IF YOU'VE SUCCESSFULLY COMPLETED THE METHODS ABOVE 
+		IF YOU THINK YOU'VE SOLVED THESE NEW PROBLEMS, UNCOMMENT THE IF STATEMENTS IN
+		THE MAIN METHOD PERTAINING TO THESE METHODS
+	*/
+	
+	/**
+	 * Sums the digits of a number. 
+	 * Example 1: sumDigits(126) returns 9
+	 * Hint 1: Mod (%) by 10 yields the rightmost digit (126 % 10 is 6).
+	 * Hint 2: Divide (/) by 10 removes the rightmost digit (126 / 10 is 12). 
+	 * 
+	 * @param n A number whose digits are to be added together.
+	 * @return An integer whose number represents the digits of the original number summed.
+	 */
+	public static int sumDigits(int n) {
+		return 0;
+	}
+	
+	/**
+	 * Counts the number of lowercase 'x' chars in a String.
+	 * Example 1: countX("xxhixx") returns 4
+	 * Hint 1: Like the reverse String method, use String class substring method.
+	 * 
+	 * @param str The string to count how many lowercase 'x' are in it.
+	 * @return The total number of lowercase 'x' in the String.
+	 */
+	public static int countX(String str) {
+		  return 0;
+	}
+	
 	public static void main(String[] args) {
 		
 		try {
@@ -67,5 +97,40 @@ public class StringReverse {
 		} catch (StringIndexOutOfBoundsException e) {
 			System.out.println("ERROR: " + e.getMessage());
 		}
+		
+		/** DELETE THIS LINE IF YOU THINK YOU'VE SOLVED THE ADDITIONAL RECURSIVE METHODS 
+		 
+		//sumDigits method
+		int sum = sumDigits(126); 
+		if(sum == 9) {
+			System.out.println("\nCongratulations! You've successfully summed all the digits");
+		} else {
+			System.out.println("\nERROR: sumDigits.\nYou need 9, but instead got: " + sum);
+		}
+		
+		sum = sumDigits(49);
+		if(sum == 13) {
+			System.out.println("\nCongratulations! You've successfully summed all the digits");
+		} else {
+			System.out.println("\nERROR: sumDigits.\nYou need 13, but instead got: " + sum);
+		}
+		
+		//countX method
+		int count = countX("xxhixx");
+		if(count == 4) {
+			System.out.println("\nCongratulations! You've counted all the x's!");
+		} else {
+			System.out.println("\nERROR: countX.\n You need 4, but instead got: " + count);
+		}
+		
+		count = countX("xhixhix");
+		if(count == 3) {
+			System.out.println("\nCongratulations! You've counted all the x's!");
+		} else {
+			System.out.println("\nERROR: countX.\n You need 3, but instead got: " + count);
+		}
+		
+		DELETE THIS LINE IF YOU THINK YOU'VE SOLVED THE ADDITIONAL RECURSIVE METHODS */
+		 
 	}
 }
