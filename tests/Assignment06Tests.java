@@ -1,15 +1,14 @@
-
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class Assignment06Tests {
-  private Calculate c;
+  private Calculator c;
 
   @Before
   public void setup() {
-    c = new Calculate();
+    c = new Calculator();
   }
 
   @Test
