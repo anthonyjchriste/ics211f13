@@ -123,8 +123,7 @@ public class StringReverse {
 			System.out.println("ERROR: " + e.getMessage());
 		}
 		
-		/** DELETE THIS LINE IF YOU THINK YOU'VE SOLVED THE ADDITIONAL RECURSIVE METHODS 
-		 
+
 		//sumDigits method
 		System.out.println("sumDigitsRecursion(126)")
 		int sum = sumDigitsRecursion(126); 
@@ -191,7 +190,5 @@ public class StringReverse {
 			System.out.println("\nERROR: countX.\n You need 3, but instead got: " + count);
 		}
 		
-		DELETE THIS LINE IF YOU THINK YOU'VE SOLVED THE ADDITIONAL RECURSIVE METHODS */
-		 
 	}
 }
