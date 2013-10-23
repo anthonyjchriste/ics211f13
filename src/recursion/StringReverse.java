@@ -159,6 +159,7 @@ public class StringReverse {
 		}
 		
 		//countX method
+		System.out.println("countXRecursion(xxhixx)")
 		int count = countXRecursion("xxhixx");
 		if(count == 4) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
@@ -166,6 +167,7 @@ public class StringReverse {
 			System.out.println("\nERROR: countX.\n You need 4, but instead got: " + count);
 		}
 		
+		System.out.println("countXRecursion(xhixhix)")
 		count = countXRecursion("xhixhix");
 		if(count == 3) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
@@ -173,6 +175,7 @@ public class StringReverse {
 			System.out.println("\nERROR: countX.\n You need 3, but instead got: " + count);
 		}
 		
+		System.out.println("countXIteration(xxhixx)")
 		count = countXIteration("xxhixx");
 		if(count == 4) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
@@ -180,6 +183,7 @@ public class StringReverse {
 			System.out.println("\nERROR: countX.\n You need 4, but instead got: " + count);
 		}
 		
+		System.out.println("countXIteration(xhixhix)")
 		count = countXIteration("xhixhix");
 		if(count == 3) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
