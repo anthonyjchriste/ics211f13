@@ -47,7 +47,20 @@ public class StringReverse {
 	 * @param n A number whose digits are to be added together.
 	 * @return An integer whose number represents the digits of the original number summed.
 	 */
-	public static int sumDigits(int n) {
+	public static int sumDigitsRecursion(int n) {
+		return 0;
+	}
+	
+	/**
+	 * Sums the digits of a number. 
+	 * Example 1: sumDigits(126) returns 9
+	 * Hint 1: Mod (%) by 10 yields the rightmost digit (126 % 10 is 6).
+	 * Hint 2: Divide (/) by 10 removes the rightmost digit (126 / 10 is 12). 
+	 * 
+	 * @param n A number whose digits are to be added together.
+	 * @return An integer whose number represents the digits of the original number summed.
+	 */
+	public static int sumDigitsIteration(int n) {
 		return 0;
 	}
 	
@@ -59,7 +72,19 @@ public class StringReverse {
 	 * @param str The string to count how many lowercase 'x' are in it.
 	 * @return The total number of lowercase 'x' in the String.
 	 */
-	public static int countX(String str) {
+	public static int countXRecursion(String str) {
+		  return 0;
+	}
+	
+	/**
+	 * Counts the number of lowercase 'x' chars in a String.
+	 * Example 1: countX("xxhixx") returns 4
+	 * Hint 1: Like the reverse String method, use String class substring method.
+	 * 
+	 * @param str The string to count how many lowercase 'x' are in it.
+	 * @return The total number of lowercase 'x' in the String.
+	 */
+	public static int countXIteration(String str) {
 		  return 0;
 	}
 	
