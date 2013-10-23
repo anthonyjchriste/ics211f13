@@ -126,14 +126,32 @@ public class StringReverse {
 		/** DELETE THIS LINE IF YOU THINK YOU'VE SOLVED THE ADDITIONAL RECURSIVE METHODS 
 		 
 		//sumDigits method
-		int sum = sumDigits(126); 
+		System.out.println("sumDigitsRecursion(126)")
+		int sum = sumDigitsRecursion(126); 
 		if(sum == 9) {
 			System.out.println("\nCongratulations! You've successfully summed all the digits");
 		} else {
 			System.out.println("\nERROR: sumDigits.\nYou need 9, but instead got: " + sum);
 		}
 		
-		sum = sumDigits(49);
+		System.out.println("sumDigitsRecursion(49)")
+		sum = sumDigitsRecursion(49);
+		if(sum == 13) {
+			System.out.println("\nCongratulations! You've successfully summed all the digits");
+		} else {
+			System.out.println("\nERROR: sumDigits.\nYou need 13, but instead got: " + sum);
+		}
+		
+		System.out.println("sumDigitsIteration(126)")
+		sum = sumDigitsIteration(126); 
+		if(sum == 9) {
+			System.out.println("\nCongratulations! You've successfully summed all the digits");
+		} else {
+			System.out.println("\nERROR: sumDigits.\nYou need 9, but instead got: " + sum);
+		}
+		
+		System.out.println("sumDigitsIteration(49)")
+		sum = sumDigitsIteration(49);
 		if(sum == 13) {
 			System.out.println("\nCongratulations! You've successfully summed all the digits");
 		} else {
@@ -141,14 +159,28 @@ public class StringReverse {
 		}
 		
 		//countX method
-		int count = countX("xxhixx");
+		int count = countXRecursion("xxhixx");
 		if(count == 4) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
 		} else {
 			System.out.println("\nERROR: countX.\n You need 4, but instead got: " + count);
 		}
 		
-		count = countX("xhixhix");
+		count = countXRecursion("xhixhix");
+		if(count == 3) {
+			System.out.println("\nCongratulations! You've counted all the x's!");
+		} else {
+			System.out.println("\nERROR: countX.\n You need 3, but instead got: " + count);
+		}
+		
+		count = countXIteration("xxhixx");
+		if(count == 4) {
+			System.out.println("\nCongratulations! You've counted all the x's!");
+		} else {
+			System.out.println("\nERROR: countX.\n You need 4, but instead got: " + count);
+		}
+		
+		count = countXIteration("xhixhix");
 		if(count == 3) {
 			System.out.println("\nCongratulations! You've counted all the x's!");
 		} else {
