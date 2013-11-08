@@ -5,7 +5,7 @@ import java.util.Arrays;
  * to simply perform visual analysis to see if the toString looks correct.
  */
 public class Assignment09ToStringTests {
-  A09Tree<Integer> tree;
+  HW9Tree<Integer> tree;
 
   public Assignment09ToStringTests() {
     testToStringSingle();
@@ -19,14 +19,14 @@ public class Assignment09ToStringTests {
   }
 
   public void testToStringSingle() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(1, lefts(""));
     compareToStrings("1\n", tree.toString());
   }
 
 
   public void testToStringBasicLeft() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(15, lefts(""));
     tree.add(10, lefts("l"));
     compareToStrings("15\n    10\n", tree.toString());
@@ -34,7 +34,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringBasicRight() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(15, lefts(""));
     tree.add(20, lefts("r"));
     compareToStrings("15\n    20\n", tree.toString());
@@ -42,7 +42,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringBasicFull() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(15, lefts(""));
     tree.add(20, lefts("r"));
     tree.add(10, lefts("l"));
@@ -51,7 +51,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringLongLeft() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(4, lefts(""));
     tree.add(3, lefts("l"));
     tree.add(2, lefts("l l"));
@@ -61,7 +61,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringLongRight() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(1, lefts(""));
     tree.add(2, lefts("r"));
     tree.add(3, lefts("r r"));
@@ -71,7 +71,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringAlternatingAdd() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(20, lefts(""));
     tree.add(15, lefts("l"));
     tree.add(25, lefts("r"));
@@ -84,7 +84,7 @@ public class Assignment09ToStringTests {
 
 
   public void testToStringLarge() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
     tree.add(20, lefts(""));
     tree.add(25, lefts("r"));
     tree.add(23, lefts("r l"));
