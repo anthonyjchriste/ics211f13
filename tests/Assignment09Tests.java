@@ -6,11 +6,11 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 public class Assignment09Tests {
-  private A09Tree<Integer> tree;
+  private HW9Tree<Integer> tree;
 
   @Before
   public void setup() {
-    tree = new A09Tree<Integer>();
+    tree = new HW9Tree<Integer>();
   }
 
   @Test
