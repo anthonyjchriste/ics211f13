@@ -1,6 +1,5 @@
 package bst;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -138,44 +137,60 @@ public class BinarySearchTree<E extends Comparable<E>> {
   }
 
   private List<E> getPreOrderList(BinaryTreeNode<E> node, List<E> list) {
-    // TODO
-    return null;
+    if(node == null) {
+      return list;
+    }
+
+    list.add(node.getData());
+    getPreOrderList(node.getLeft(), list);
+    getPreOrderList(node.getRight(), list);
+
+    return list;
   }
 
   private List<E> getInOrderList(BinaryTreeNode<E> node, List<E> list) {
-    // TODO
-    return null;
+    if(node == null) {
+      return list;
+    }
+
+
+    getInOrderList(node.getLeft(), list);
+    list.add(node.getData());
+    getInOrderList(node.getRight(), list);
+
+    return list;
   }
 
   private List<E> getPostOrderList(BinaryTreeNode<E> node, List<E> list) {
-    // TODO
-    return null;
+    if(node == null) {
+      return list;
+    }
+
+
+    getPostOrderList(node.getLeft(), list);
+    getPostOrderList(node.getRight(), list);
+    list.add(node.getData());
+
+    return list;
   }
 
   public static void main(String[] args) {
-    BinarySearchTree<String> bst = new BinarySearchTree<String>();
-    bst.add("G");
-    bst.add("D");
-    bst.add("B");
-    bst.add("C");
-    bst.add("L");
-    bst.add("M");
-    bst.add("H");
-    bst.add("A");
-    bst.add("E");
+    BinarySearchTree<Integer> bst = new BinarySearchTree<Integer>();
+    bst.add(5);
+    bst.add(2);
+    bst.add(1);
+    bst.add(3);
+    bst.add(8);
+    bst.add(15);
+    bst.add(13);
+    bst.add(12);
+    bst.add(22);
 
-    List<String> preOrderList = bst.getPreOrderList();
-    List<String> inOrderList = bst.getInOrderList();
-    List<String> postOrderList = bst.getPostOrderList();
+    System.out.println(bst.getPreOrderList());
+    System.out.println(bst.getInOrderList());
+    System.out.println(bst.getPostOrderList());
 
-    System.out.format("preOrder %s Correct? %s\n",
-                      preOrderList, preOrderList.equals(Arrays.asList("G", "D", "B", "A", "C", "E", "L", "H", "M")));
 
-    System.out.format("inOrder %s Correct? %s\n",
-                      inOrderList, inOrderList.equals(Arrays.asList("A", "B", "C", "D", "E", "G", "H", "L", "M")));
-
-    System.out.format("postOrder %s Correct? %s\n",
-                      postOrderList, postOrderList.equals(Arrays.asList("A", "C", "B", "E", "D", "H", "M", "L", "G")));
 
   }
 }
