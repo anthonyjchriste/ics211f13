@@ -90,4 +90,14 @@ public class Assignment11Tests {
     table.put("a", 5);
     assertEquals((Integer) 5, table.get("a"));
   }
+  
+  @Test
+  public void testLotsOfCollisions() {
+    Hash211<String, Integer> smallTable = new Hash211<String, Integer>(1, false);
+    smallTable.put("a", 1);
+    smallTable.put("b", 2);
+    smallTable.put("a", 3);
+    assertEquals((Integer) 2, smallTable.get("b"));
+    assertEquals((Integer) 3, smallTable.get("a"));
+  }
 }
